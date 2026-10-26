@@ -52,6 +52,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 16px);
+  overflow-x: hidden;
 }
 
 body {
@@ -317,7 +318,6 @@ body.is-ready .preloader { opacity: 0; visibility: hidden; }
   border-radius: 46% 54% 50% 50% / 55% 48% 52% 45%;
   overflow: hidden;
   box-shadow: var(--shadow-3);
-  animation: blobMorph 18s ease-in-out infinite alternate;
   aspect-ratio: 1;
 }
 .hero__frame img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); }
@@ -399,7 +399,6 @@ body.is-ready .preloader { opacity: 0; visibility: hidden; }
 .marquee {
   background: var(--green-900); color: var(--sage);
   padding: 20px 0; overflow: hidden;
-  transform: rotate(-1.2deg) scale(1.02);
   box-shadow: var(--shadow-2);
 }
 .marquee__track {
@@ -970,7 +969,7 @@ body.is-ready .preloader { opacity: 0; visibility: hidden; }
   .section__head--between { flex-direction: column; align-items: flex-start; }
   .footer__grid { grid-template-columns: 1fr; }
   .footer__bottom { justify-content: center; text-align: center; }
-  .marquee { transform: rotate(-1.6deg); }
+  .blob { animation: none; }
 }
 
 /* ═══════════ صفحات مقاله ═══════════ */
