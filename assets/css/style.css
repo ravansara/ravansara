@@ -434,7 +434,8 @@ body.is-ready .preloader { opacity: 0; visibility: hidden; }
 
 /* ═══════════ خدمات ═══════════ */
 .services__grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px;
+  max-width: 880px; margin-inline: auto;
 }
 .service-card {
   background: var(--paper);
